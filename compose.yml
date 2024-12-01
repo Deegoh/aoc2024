@@ -1,0 +1,7 @@
+services:
+  python:
+    build: .
+    volumes:
+      - ./src:/usr/src/app
+    environment:
+      COOKIE_DATA: ${COOKIE}
