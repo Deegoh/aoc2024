@@ -15,12 +15,8 @@ def part1(data):
 	print(result)
 
 def part2(data):
-	# pattern = r'don\'t\(\).*?do\(\)|$'
 	pattern = r'don\'t\(\)[\s\S]*?(do\(\)|$)'
 	matches = re.sub(pattern, "", "do()"+data+"don't()")
-	# for match in matches:
-	# print(matches)
-	# print(data)
 	part1(matches)
 
 part1(dataTest)
